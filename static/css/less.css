@@ -1,0 +1,85 @@
+/* functions */
+.opacity(@arg) { -webkit-opacity: @arg; -moz-opacity: @arg; -o-opacity: @arg; -ms-opacity: @arg; opacity: @arg; }
+.border-radius(@args) { -webkit-border-radius: @args; -moz-border-radius: @args; -o-border-radius: @args; -ms-border-radius: @args; border-radius: @args; }
+.transition-duration(@dur) { -webkit-transition-duration: @dur; -moz-transition-duration: @dur; -o-transition-duration: @dur; -ms-transition-duration: @dur; transition-duration: @dur; }
+.transform(@args) { -webkit-transform: @args; -moz-transform: @args; -o-transform: @args; -ms-transform: @args; transform: @args; }
+.box-shadow(@args) { -webkit-box-shadow: @args; -moz-box-shadow: @args; -o-box-shadow: @args; -ms-box-shadow: @args; box-shadow: @args; }
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) { background: @color; background: -webkit-gradient(linear, left bottom, left top, color-stop(0, @start), color-stop(1, @stop)); background: -ms-linear-gradient(bottom, @start, @stop); background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%); }
+
+/* transitions */
+.navigation a,
+.navigation .title,
+.scroll-to-top .box,
+.gallery-nav a,
+.gallery-nav a.minimize .icon,
+.button,
+.work-experience .dots .dot,
+footer ul li a,
+.monochrome li a img{ .transition-duration(0.35s); }
+
+.navigation .image { .transition-duration(0.5s); }
+
+.thumbnail-zoom,
+.gallery,
+.gallery > ul > li,
+.gallery > ul,
+.gallery .info,
+.gallery .thumbnail,
+.skill .wrapper .tech { .transition-duration(1s); }
+
+.skill .wrapper { .transition-duration(3s); }
+
+/* common */
+.scroll-to-top .box,
+.button { .border-radius(5px); .opacity(0.65); }
+.scroll-to-top:hover .box,
+.button:hover, .button:active { .opacity(1); }
+
+/* thumbnails */
+a.thumbnail, a.thumbnail:hover { .box-shadow(none); }
+.thumbnail { .border-radius(20px); }
+.thumbnail-zoom { .border-radius(18px); }
+.thumbnail img { .border-radius(16px); }
+.thumbnail-zoom { .opacity(0); }
+.thumbnail:hover > .thumbnail-zoom { .opacity(0.5); }
+
+/* gallery */
+.gallery-nav a { .opacity(0.65); }
+.gallery-nav a:hover { .opacity(1); }
+.gallery-nav a.inactive { .opacity(0.25); }
+.gallery-nav a.prev { .border-radius(5px 0 0 5px); }
+.gallery-nav a.next { .border-radius(0 5px 5px 0); }
+/*.gallery-nav a.minimize.collapsed .icon { .opacity(0); }*/
+.gallery .info { .opacity(0); }
+.gallery.open .active .info { .opacity(1); }
+
+/* work experience */
+.work-experience .dots .dot { .opacity(0.25); }
+.work-experience .dots .dot:hover { .opacity(1); }
+
+/* monochrome */
+.monochrome li a img { .opacity(0.25); }
+.monochrome li a:hover img { .opacity(1); }
+
+/* forms */
+select, select:focus,
+textarea, textarea:focus,
+input[type="text"], input[type="text"]:focus,
+input[type="password"], input[type="password"]:focus,
+input[type="datetime"], input[type="datetime"]:focus,
+input[type="datetime-local"], input[type="datetime-local"]:focus,
+input[type="date"], input[type="date"]:focus,
+input[type="month"], input[type="month"]:focus,
+input[type="time"], input[type="time"]:focus,
+input[type="week"], input[type="week"]:focus,
+input[type="number"], input[type="number"]:focus,
+input[type="email"], input[type="email"]:focus,
+input[type="url"], input[type="url"]:focus,
+input[type="search"], input[type="search"]:focus,
+input[type="tel"], input[type="tel"]:focus,
+input[type="color"], input[type="color"]:focus,
+.uneditable-input, .uneditable-input:focus { .box-shadow(none); .border-radius(0); }
+
+/* footer */
+footer ul li a { .opacity(0.35); }
+footer ul li a:hover { .opacity(1); }

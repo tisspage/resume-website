@@ -1,0 +1,207 @@
+{%extends "base.html"%}
+{%load staticfiles%}    
+
+{%block container%}
+    <div class="row-fluid">
+                <div class="span4 featured">
+                    <h3 class="alt">Site à <a href="#web-design" class="s-scroll"><em>la Une</em></a></h3>
+                    <a href="#web-design" class="s-scroll thumbnail" data-featured-gallery="#gallery-web-design" data-featured-index="0"><img src="{% static 'projects/site/voiture-collection.jpg'%}" alt="" /><span class="thumbnail-zoom"></span></a>
+                </div>
+                <!-- <div class="span8"><img src="{% static 'img/slogan.png'%}" class="slogan" alt="" /></div>-->
+            </div>
+            
+            <!-- ABOUT ME -->
+            <h1 id="about-me"><span class="left">Développeur <em> Django-Python</em> </span><span class="image"><i class="fa fa-user "></i></span><span class="right">Freelance</span></h1>
+            <div class="row-fluid">
+                <div class="span6">
+                    <div class="code-head"></div>
+                </div>
+                <div class="span6">
+                    <h2>À propos de moi</h2>
+                    <h3>...et de mon auto-entreprise</h3>
+                    <p>Développeur Django-Python depuis 2 ans, je réalise des sites Internet et des applications web.</p>
+
+                    <p>Me positionnant comme freelance, je peux répondre aux différentes attentes des entreprises ou des collectivités qui font appel à mes services.</p>
+
+                    <p>Je travaille aussi bien sur des projets d'envergure (agence immobilière, site de rencontre entre startup et journaliste, établissement hôtelier, musée, ...) que sur des projets plus modestes mais tout aussi importants et épanouissants. </p>
+
+                    
+                    <a href="https://www.djangoproject.com/" target="_blank"><img src="{%static 'img/developpement-django.png'%}" width="150" alt="" /></a>
+                    <a href="http://fr.wikipedia.org/wiki/HTML5" target="_blank"><img src="{%static 'img/html5.png'%}" width="150" alt="" /></a>
+                    <a href="http://validator.w3.org/" target="_blank"><img src="{%static 'img/validator-w3c.png'%}" width="150" alt="" /></a>
+                    
+                        
+                    
+                </div>
+            </div>
+            <!-- ABOUT ME -->
+            
+            <!-- SKILLS -->
+            <h1 id="skills"><span class="left">Application Web</span><span class="image"><i class="fa fa-graduation-cap "></i></span><span class="right">Création <em>Site Internet</em></span></h1>
+            <div class="row-fluid">
+                
+                <div class="span12">
+                    <h2>Mes compétences à votre <em>service</em></h2>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="skill"><div class="wrapper" data-progress="100%"><span class="tech s-tooltip" data-original-title="Très bien">Django</span></div></div>
+                            <div class="skill"><div class="wrapper" data-progress="90%"><span class="tech s-tooltip" data-original-title="Bon">Python</span></div></div>
+                            <div class="skill"><div class="wrapper" data-progress="80%"><span class="tech s-tooltip" data-original-title="Bon">MySql, PostGreSql</span></div></div>
+                            <div class="skill"><div class="wrapper" data-progress="60%"><span class="tech s-tooltip" data-original-title="Bonnes notions">AngularJS</span></div></div> 
+                        </div>
+                        <div class="span6">
+                            <div class="skill"><div class="wrapper" data-progress="85%"><span class="tech s-tooltip" data-original-title="Bon">HTML5</span></div></div>
+                            <div class="skill"><div class="wrapper" data-progress="75%"><span class="tech s-tooltip" data-original-title="Bonnes connaissances">CSS3</span></div></div>
+                            <div class="skill"><div class="wrapper" data-progress="65%"><span class="tech s-tooltip" data-original-title="Bonnes notions">Javascript</span></div></div>
+                            <div class="skill"><div class="wrapper" data-progress="55%"><span class="tech s-tooltip" data-original-title="Notions">SEO</span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Expérience</h2>
+            <ul class="work">
+                <li>
+                    <h4>R&D sur la programmation embarquée</h4>
+                    <p>Domaine : Drones Open Source<br />Mars - Septembre 2013</p>
+                </li>
+                <li>
+                    <h4>Développeur Django-Python</h4>
+                    <p>Domaine : Sites Internet, Application Web<br />Mars 2013 - maintenant</p>
+                </li>
+            </ul>
+            <!-- SKILLS END -->
+            
+            <!-- PROJECTS -->
+            <h1 id="projects"><span class="left">J'analyse, je développe, je <em>code</em></span><span class="image"><i class="fa fa-image "></i></span><span class="right">Un apercu de mes travaux</span></h1>
+            <div id="web-design" class="row-fluid">
+                <h2>
+                    Sites Internet
+                    <span class="gallery-nav pull-right" data-gallery="#gallery-web-design">
+                        <a href="#" class="prev"><span class="icon icon-white icon-chevron-left"></span></a>
+                        <a href="#" class="minimize collapsed"><span class="icon icon-white icon-remove"></span></a>
+                        <a href="#" class="next"><span class="icon icon-white icon-chevron-right"></span></a>
+                    </span>
+                </h2>
+
+                <div id="gallery-web-design" class="gallery">
+                    <ul>
+                        <li>
+                            <a href="#" class="thumbnail"><img src="{% static 'projects/site/voiture-collection.jpg'%}" alt="" /><span class="thumbnail-zoom"></span></a>
+                            <div class="info">
+                                <h3>AutoCollectionVintage</h3>
+                                <p>Site Internet d'annonces automobiles gratuites. Vous retrouverez sur <a href="http://www.autocollectionvintage.fr" target="_blank">leur site internet</a> un très large choix d'annonces automobiles.</p>
+                                <h4>Modules & Fonctionnalités</h4>
+                                <ul>
+                                    <li>Gestion d'annonces gratuites</li>
+                                    <li>Administration par page sécurisée</li>
+                                    <li>Module de tweets automatiques</li>
+                                    <li>Blog</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="thumbnail"><img src="{% static 'projects/site/musee-populaire-vienne.jpg'%}" alt="" /><span class="thumbnail-zoom"></span></a>
+                            <div class="info">
+                                <h3>Musée Chez Manuel</h3>
+                                <p>Site Internet d'un musée d'art populaire. Vous retrouverez sur <a href="http://www.musee-chez-manuel.com" target="_blank">leur site internet</a> une collection riche et variée d'objets contemporains.</p>
+                                <h4>Modules & Fonctionnalités</h4>
+                                <ul>
+                                    <li>Galerie Photo</li>
+                                    <li>Administration par page sécurisée</li>
+                                    <li>Livre d'or avec modération de l'admin</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="thumbnail"><img src="{% static 'projects/site/gourdon-immobilier.jpg'%}" alt="" /><span class="thumbnail-zoom"></span></a>
+                            <div class="info">
+                                <h3>Gourdon Immobilier</h3>
+                                <p>Site Internet d'une agence immobilière. Vous retrouverez sur <a href="http://www.gourdon-immobilier.fr" target="_blank">leur site internet</a> un très large choix d'annonces immobilières dans la Vienne.</p>
+                                <h4>Modules & Fonctionnalités</h4>
+                                <ul>
+                                    <li>Gestion d'annonces immobilières</li>
+                                    <li>Administration par page sécurisée</li>
+                                    <li>Passerelle immobilière vers SeLoger.com</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="thumbnail"><img src="{% static 'projects/site/reseaux-sociaux-journaliste.jpg'%}" alt="" /><span class="thumbnail-zoom"></span></a>
+                            <div class="info">
+                                <h3>PickMyStartup</h3>
+                                <p>Site Internet d'un réseau social entre journalistes et startup. Vous retrouverez sur <a href="http://www.pickmystartup.fr" target="_blank">leur site internet</a> un projet très innovant.</p>
+                                <h4>Modules & Fonctionnalités</h4>
+                                <ul>
+                                    <li>Espace client sécurisé</li>
+                                    <li>Lien social</li>
+                                    <li>En cours de modification</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="thumbnail"><img src="{% static 'projects/site/paywhatyouget.jpg'%}" alt="" /><span class="thumbnail-zoom"></span></a>
+                            <div class="info">
+                                <h3>PayWhatYouGet</h3>
+                                <p>Site Internet d'un musée d'art populaire. Vous retrouverez sur <a href="http://www.paywhatyouget.fr" target="_blank">leur site internet</a> une collection riche et variée d'objets contemporains.</p>
+                                <h4>Modules & Fonctionnalités</h4>
+                                <ul>
+                                    <li>Galerie Photo</li>
+                                    <li>Administration par page sécurisée</li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- PROJECTS END -->
+            
+            <!-- CONTACTS -->
+            <h1 id="contacts"><span class="left">Des <em>précisions</em> ou un<em> devis</em> ?</span><span class="image"><i class="fa fa-envelope "></i></span><span class="right">Contactez moi</span></h1>
+            <div class="row-fluid">
+                <div class="span6">
+                    <form action="?" method="post">{%csrf_token%}
+                        
+                        <h4>{{form.email.label}}</h4>
+                        <div class="border-stripes">
+                            {{form.email}}
+                        </div>
+                        
+                        <h4>{{form.message.label}}</h4>
+                        <div class="border-stripes">
+                            {{form.message}}
+                        </div>
+
+                        <br /><br />
+                        
+                        <input type="submit" class="button" value="Envoyer" />
+                    </form>
+                </div>
+                <div class="span6">
+                    <h3>Comment me joindre</h3>
+                    <ul class="group-icon">
+                        <li>
+                            <span><i class="fa fa-phone fa-3x"></i></span>
+                            <span><strong>Téléphone</strong></span>
+                            <a href="callto:33661878370+type=phone">(+33) 06 61 87 83 70</a>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope-square fa-3x"></i></span>
+                            <strong>E-mail</strong>
+                            <a href="mailto:contact@tisspage.fr">contact@tisspage.fr</a>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-skype fa-3x"></i></span>
+                            <strong>Skype</strong>
+                            <a href="#">tisspage</a>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-twitter fa-3x"></i></span>
+                            <strong>Twitter</strong>
+                            <a href="https://twitter.com/TissPage" target="_blank">https://twitter.com/TissPage</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        {%endblock%}
